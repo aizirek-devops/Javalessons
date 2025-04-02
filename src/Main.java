@@ -1,18 +1,19 @@
-public class Main {
-    public Main() {
-    }
+import java.util.Scanner;
 
+public class Solution {
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
-        System.out.println("Enter your role (Admin, User, Guest): ");
-        String role = scanner.nextLine().trim();
-        switch (role.toLowerCase()) {
-            case "admin" -> System.out.println("You have full access.");
-            case "user" -> System.out.println("You have limited access.");
-            case "guest" -> System.out.println("You have guest access.");
-            default -> System.out.println("Invalid role entered!");
+        Scanner sc = new Scanner(System.in);
+
+        System.out.println("================================");
+
+        for (int i = 0; i < 3; i++) {
+            String s1 = sc.next();
+            int x = sc.nextInt();
+            // %-15s : left-justify the string in 15 characters
+            // %03d : pad the integer with leading zeros to make 3 digits
+            System.out.printf("%-15s%03d%n", s1, x);
         }
 
-        scanner.close();
+        System.out.println("================================");
     }
 }
