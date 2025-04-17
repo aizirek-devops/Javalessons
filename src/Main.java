@@ -1,9 +1,11 @@
+import java.util.Scanner;
+
 public class Main {
     public static void main(String[] args) {
-        int a = 20;
-        int b = 10;
-        int c = a-b;
-
-        System.out.println(c);
+        Scanner sc = new Scanner(System.in);
+        int a = sc.nextInt();
+        int b = sc.nextInt();
+        String name = sc.next();
+        System.out.println(a + b);
     }
 }
