@@ -3,10 +3,33 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        int a = sc.nextInt();
+        int dayNumber = sc.nextInt();
+        switch (dayNumber) {
+            case 1:
+                System.out.println("Monday - Start of the work week");
+                break;
+            case 2:
+                System.out.println("Tuesday - Keep going day");
+                break;
+            case 3:
+                System.out.println("Wednesday - MedWeek already");
+                break;
+            case 4:
+                System.out.println("Thursday - Almost there");
+                break;
+            case 5:
+                System.out.println("Friday - Weekend is near");
+                break;
+            case 6:
+                System.out.println("Saturday - Time to relax");
+                break;
+            case 7:
+                System.out.println("Sunday - Rest and Recharge");
+                break;
+            default:
+                System.out.println("Invalid day");
+                break;
 
-
-        int b = sc.nextInt();
-        System.out.println(a + b);
+        }
     }
 }
